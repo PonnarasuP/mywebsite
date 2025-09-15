@@ -182,12 +182,33 @@
       box-shadow: var(--shadow);
       animation: fadeInUp 1.2s;
     }
+    /* Responsive styles */
+    @media (max-width: 900px) {
+      main {
+        max-width: 100%;
+        padding: 0 1rem;
+      }
+      section {
+        padding: 1.5rem 1rem 1rem 1rem;
+      }
+    }
     @media (max-width: 600px) {
       header h1 { font-size: 2rem; }
+      header p { font-size: 1rem; }
       main { padding: 0 0.5rem; }
       section { padding: 1.2rem 0.7rem; }
       section h2 { font-size: 1.3rem; }
-      nav { gap: 1rem; }
+      nav { gap: 0.5rem; flex-wrap: wrap; }
+      nav a { font-size: 1rem; padding: 0.4rem 0.8rem; }
+      .cta { font-size: 1rem; padding: 0.6rem 1.2rem; }
+      iframe { min-height: 320px; }
+      section ul li { font-size: 1rem; }
+    }
+    @media (max-width: 400px) {
+      header h1 { font-size: 1.3rem; }
+      section h2 { font-size: 1rem; }
+      nav a { font-size: 0.9rem; padding: 0.3rem 0.5rem; }
+      .cta { font-size: 0.9rem; padding: 0.5rem 0.8rem; }
     }
     /* Animated gradient background for sections */
     section::before {
@@ -268,7 +289,7 @@
         <li>Location: India (Global Projects Supported)</li>
       </ul>
       <!-- Google Form for inquiries -->
-      <iframeiframe src="https://docs.google.com/forms/d/e/1FAIpQLSfH0QhJW9ByObUhBz9SmghtmRQlcPHn507uKfolF76Pj0n9Ng/viewform?embedded=true" width="640" height="853" frameborder="0" marginheight="0" marginwidth="0" title="Contact Form for NexonTech">Loading…</iframe>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfH0QhJW9ByObUhBz9SmghtmRQlcPHn507uKfolF76Pj0n9Ng/viewform?embedded=true" width="640" height="853" frameborder="0" marginheight="0" marginwidth="0" title="Contact Form for NexonTech">Loading…</iframe>
     </section>
   </main>
   <footer>
